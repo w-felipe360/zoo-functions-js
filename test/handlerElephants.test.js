@@ -25,7 +25,7 @@ it('Para o argumento popularity deve retornar um número igual ou maior a 5;', (
 it('Não passando argumentos a função deve retornar undefined', () => {
   expect(handlerElephants()).toBeUndefined();
 });
-it('passando um objeto vazio retorna um erro', () => {
+it('passando um objeto vazio retorna um erro.', () => {
   expect(handlerElephants({})).toBe(
     'Parâmetro inválido, é necessário uma string',
   );

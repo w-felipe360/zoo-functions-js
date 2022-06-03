@@ -107,7 +107,7 @@ function whatIf(info) {
   }
 }
 
-function valEmployeesCoverage(param) {
+function getEmployeesCoverage(param) {
   if (typeof param === 'undefined') return returnAll();
   const funcionario1 = data.employees.find(
     (elemento) => elemento.firstName === param.name || elemento.lastName === param.name,
@@ -124,4 +124,4 @@ function valEmployeesCoverage(param) {
   }
 }
 
-module.exports = valEmployeesCoverage;
+module.exports = getEmployeesCoverage;
